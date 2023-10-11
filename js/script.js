@@ -86,7 +86,7 @@ function files(index) {
 }
 
 
-const frameCount = 115;
+const frameCount = 60;
 
 const images = [];
 const imageSeq = {
