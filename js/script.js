@@ -81,12 +81,12 @@ window.addEventListener("resize", function () {
 //     return data.split("\n")[index];
 // }
 function files(index) {
-    const path = "images/background/";
-    return `${path}${index.toString().padStart(4, '0')}.png`;
+    const path = "images/cartoonic/";
+    return `${path}${index.toString().padStart(4, '0')}.webp`;
 }
 
 
-const frameCount = 110;
+const frameCount = 115;
 
 const images = [];
 const imageSeq = {
