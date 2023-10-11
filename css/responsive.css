@@ -1,0 +1,33 @@
+@media (max-width: 1336px) {
+    nav {
+        height: auto;
+    }
+
+    label.logo>img {
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(29, 28, 28, 0.8);
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .icons {
+        display: block;
+    }
+
+    #home>h1 {
+        font-size: 40px;
+    }
+}

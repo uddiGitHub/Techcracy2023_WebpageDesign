@@ -104,7 +104,7 @@ gsap.to(imageSeq, {
     snap: "frame",
     ease: `none`,
     scrollTrigger: {
-        scrub: 3,
+        scrub: true,
         trigger: `#home`,
         //   set start end according to preference
         start: `top top`,
