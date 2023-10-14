@@ -1,6 +1,7 @@
-@media (max-width: 1336px) {
+@media (max-width: 1623px) {
     nav {
-        height: auto;
+        height: 5vh;
+        width: 28vh;
     }
 
     label.logo>img {

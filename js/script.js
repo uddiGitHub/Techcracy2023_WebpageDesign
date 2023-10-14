@@ -47,46 +47,14 @@ window.addEventListener("resize", function () {
     render();
 });
 
-// function files(index) {
-//     path = "images/"
-//     var data = `
-//     ${path}frame_0000.png
-//     ${path}frame_0001.png
-//     ${path}frame_0002.png
-//     ${path}frame_0003.png
-//     ${path}frame_0004.png
-//     ${path}frame_0005.png
-//     ${path}frame_0006.png
-//     ${path}frame_0007.png
-//     ${path}frame_0008.png
-//     ${path}frame_0009.png
-//     ${path}frame_0010.png
-//     ${path}frame_0011.png
-//     ${path}frame_0012.png
-//     ${path}frame_0013.png
-//     ${path}frame_0014.png
-//     ${path}frame_0015.png
-//     ${path}frame_0016.png
-//     ${path}frame_0017.png
-//     ${path}frame_0018.png
-//     ${path}frame_0019.png
-//     ${path}frame_0020.png
-//     ${path}frame_0021.png
-//     ${path}frame_0022.png
-//     ${path}frame_0023.png
-//     ${path}frame_0024.png
-//     ${path}frame_0025.png
-//     ${path}frame_0026.png
-//  `;
-//     return data.split("\n")[index];
-// }
+
 function files(index) {
     const path = "images/cartoonic/";
     return `${path}${index.toString().padStart(4, '0')}.webp`;
 }
 
 
-const frameCount = 60;
+const frameCount = 110;
 
 const images = [];
 const imageSeq = {
@@ -105,7 +73,7 @@ gsap.to(imageSeq, {
     ease: `none`,
     scrollTrigger: {
         scrub: true,
-        trigger: `#home`,
+        trigger: `#home>canvas`,
         //   set start end according to preference
         start: `top top`,
         end: `600% top`,
@@ -142,7 +110,7 @@ function scaleImage(img, ctx) {
 }
 ScrollTrigger.create({
 
-    trigger: "#home",
+    trigger: "#home>canvas",
     pin: true,
     // markers:true,
     scroller: `#main`,
