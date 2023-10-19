@@ -1,0 +1,76 @@
+nav {
+    font-family: 'Tilt Neon', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2px;
+    border-radius: 60px;
+    height: 5vh;
+    width: 28vw;
+    background-color: rgba(29, 28, 28, 0.814);
+    backdrop-filter: blur(10%);
+    padding: 1px 10px;
+}
+
+label.logo>img {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    /* background-color: #2b2a2a; */
+}
+
+label.logo>img:hover {
+    margin-top: 12px;
+    margin-left: 10px;
+    width: 55px;
+    height: 55px;
+    /* background-color: #2b2a2a; */
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    word-spacing: 12px;
+    font-weight: 500;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    justify-content: space-between;
+    padding: auto;
+    border-radius: 5px;
+
+}
+
+a:hover {
+    background: #817c7cab;
+    transition: 0.5s;
+    animation-delay: 0.1s;
+}
+.active{
+   background-color:  #817c7cab;
+}
+
+.icons {
+    position: absolute;
+    right: 0;
+    margin-right: 7px;
+    font-size: 2.3rem;
+    color: whitesmoke;
+    cursor: pointer;
+    display: none;
+}

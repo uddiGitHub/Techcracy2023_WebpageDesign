@@ -1,13 +1,12 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
-@font-face {
-    font-family: crashDisplay;
-    src: url(../font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Semibold.ttf);
-}
-html, body{
+
+html,
+body {
+    font-family: 'Bebas Neue', sans-serif;
     height: 100%;
     width: 100%;
     background-color: black;
@@ -15,11 +14,13 @@ html, body{
     /* background-image: url(../images/backdround/Customize\ Free\ Purple\ Space\ Stars\ Desktop\ Wallpaper.jpeg); */
     /* background-size: cover; */
 }
-#main{
+
+#main {
     position: relative;
     overflow: hidden;
 }
-#home{
+
+#home {
     height: 100vh;
     width: 100vw;
     /* background-image: linear-gradient(black, #2b2a2a); */
@@ -27,98 +28,100 @@ html, body{
     /* background-color: #030303; */
 }
 
-#title>h1{
-    font-family: crashDisplay;
-    font-size: 180px;
+#home>h1 {
+    display: flex;
+    padding: 1rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 300px;
     color: #ffffff;
     position: absolute;
     text-align: center;
-    top: 50%;
+    top: 50vh;
     left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 1;
-    font-weight: normal;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-weight: bold;
+
+    animation-name: focus-in-expand;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
 }
 
-canvas{
+@keyframes focus-in-expand {
+
+    0% {
+        letter-spacing: -.5em;
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+#canvas {
     height: 100vh;
     width: 100vw;
-    z-index: 99;
-}
-
-nav{
-    font-family: 'Tilt Neon', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    z-index: 1;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 2px;
-    border-radius: 60px;
-    height: 5vh;
-    width: 28vw;
-    background-color: rgba(29, 28, 28, 0.555);
-    backdrop-filter: blur(10%);
-    padding: 1px 10px;
-}
-label.logo>img{
-    margin-top: 10px;
-    margin-left: 10px;
-    width: 50px;
-    height: 50px;
-    /* background-color: #2b2a2a; */
-}
-label.logo>img:hover{
-    margin-top: 12px;
-    margin-left: 10px;
-    width: 55px;
-    height: 55px;
-    /* background-color: #2b2a2a; */
-}
-nav ul{
-    float: right;
-    margin-right: 20px;
-    
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-    word-spacing: 12px;
-    font-weight: 500;
-}
-nav ul li a{
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 20px;
-    justify-content: space-between;
-    padding: auto;
-    border-radius: 5px;
-
-}
-a:hover{
-    background: #817c7cab;
-    transition: 0.5s;
-    animation-delay: 0.1s;
+    z-index: 2;
 }
 
 
-.icons{
-    position: absolute;
-    right: 0;
-    margin-right: 7px;
-    font-size: 2.3rem;
-    color: whitesmoke;
-    cursor: pointer;
-    display: none;
+#Events {
+    height: 30vh;
+    width: 100vw;
+    background-color: red;
 }
-
-
+#Events>h1{
+    font-size: 200px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 0vh;
+}
 
 #gap1{
-    height: 100vh;
+    height: 40vh;
+    width: 100vw;
+    background-color: transparent;
+}
+.comic {
+    height: 40vh;
+    width: 100vw;
+    background-color: rebeccapurple;
+    transform: translateX(400%);
+    transform: transform 4s ease;
+
+}
+.comic:nth-of-type(even){
+    transform: translateX(-400%);
+}
+.comic.show{
+    transform: translateX(0%);
+}
+
+#Competitions {
+    height: 140vh;
+    width: 100vw;
+    background-color: pink;
+}
+#Competitions>h1{
+    font-size: 250px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 0vh;
+}
+#gap7 {
+    height: 40vh;
+    width: 100vw;
+    background-color: transparent;
+}
+#gap8 {
+    height: 40vh;
     width: 100vw;
     background-color: transparent;
 }

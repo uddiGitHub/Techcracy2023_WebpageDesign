@@ -34,7 +34,7 @@ function loco() {
 loco();
 
 // canvas
-const canvas = document.querySelector("canvas");
+const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
@@ -49,7 +49,7 @@ window.addEventListener("resize", function () {
 
 
 function files(index) {
-    const path = "images/cartoonic/";
+    const path = "images/realistic/";
     return `${path}${index.toString().padStart(4, '0')}.webp`;
 }
 
@@ -61,7 +61,7 @@ const imageSeq = {
     frame: 1,
 };
 
-for (let i = 0; i < frameCount; i++) {
+for (let i = 1; i < frameCount; i++) {
     const img = new Image();
     img.src = files(i);
     images.push(img);
@@ -81,6 +81,8 @@ gsap.to(imageSeq, {
     },
     onUpdate: render,
 });
+
+
 
 images[1].onload = render;
 
@@ -118,3 +120,5 @@ ScrollTrigger.create({
     start: `top top`,
     end: `600% top`,
 });
+
+
