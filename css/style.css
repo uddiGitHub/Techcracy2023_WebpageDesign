@@ -3,16 +3,16 @@
     padding: 0%;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: 'Lapsus Pro Bold';
+    src: url(../font/lapsus-pro/LapsusPro-Bold.otf) format('opentype');
+}
 html,
 body {
     font-family: 'Bebas Neue', sans-serif;
     height: 100%;
     width: 100%;
     background-color: black;
-    /* background-image: linear-gradient(black, red);/ */
-    /* background-image: url(../images/backdround/Customize\ Free\ Purple\ Space\ Stars\ Desktop\ Wallpaper.jpeg); */
-    /* background-size: cover; */
 }
 
 #main {
@@ -23,24 +23,49 @@ body {
 #home {
     height: 100vh;
     width: 100vw;
-    /* background-image: linear-gradient(black, #2b2a2a); */
-
-    /* background-color: #030303; */
 }
-
-#home>h1 {
-    display: flex;
-    padding: 1rem;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 300px;
-    color: #ffffff;
+.year-text{
     position: absolute;
-    text-align: center;
-    top: 50vh;
+    -webkit-text-stroke: 7.5px #fff;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+    font-size: 40rem;
+    margin-bottom: 10vh;
+}
+.year-text, .Techcracy-text{
+    font-family: 'Lapsus Pro Bold', 'Bebas Neue',sans-serif;
+    letter-spacing: .1rem;
+    line-height: 108px;
+    text-transform: uppercase;
+}
+.speechBubble>img{
+    position: absolute;
+    height: 60vh;
+    width: 60vw;
     z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20vh;
+}
+.Techcracy-text{
+    position: absolute;
+    color:#fff;
+    margin-top: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20rem;
+    z-index: 5;
     font-weight: bold;
+
+    text-shadow: 3px 12px 0px rgb(10, 10, 10);
+    -webkit-text-stroke: 3px black;
 
     animation-name: focus-in-expand;
     animation-duration: 1s;
@@ -49,6 +74,7 @@ body {
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: none;
+    
 }
 
 @keyframes focus-in-expand {
@@ -114,6 +140,11 @@ body {
     color: rgb(0, 0, 0);
     text-align: center;
     margin-top: 0vh;
+}
+#gap{
+    height: 35vh;
+    width: 100vw;
+    background-color: red;
 }
 #gap7 {
     height: 40vh;

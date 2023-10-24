@@ -1,0 +1,12 @@
+::-webkit-scrollbar{
+    display: none;
+}
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Lapsus Pro Bold';
+    src: url(../font/lapsus-pro/LapsusPro-Bold.otf) format('opentype');
+}

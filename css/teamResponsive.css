@@ -1,0 +1,50 @@
+@media (max-width: 1460px) {
+    .title{
+        display: none;
+    }
+    .title>h1{
+        display: none;
+    }
+    .container{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 730px){
+    .container{
+        width: 400px;
+        height: 400px;
+    }
+    .container .icon .img-box{
+        width: 60px;
+        height: 60px;
+        transform-origin: 230px;
+    }
+    .content-box .card .img-box{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 530px){
+    .container{
+        width: 280px;
+        height: 280px;
+    }
+    .container .icon .img-box{
+        width: 50px;
+        height: 50px;
+        transform-origin: 163px;
+    }
+    .content-box .card .img-box{
+        width: 100px;
+        height: 100px;
+    }
+    .content-box .card .text-box h2{
+        font-size: 20px;
+    }
+    .content-box .card .text-box.pr h2 span{
+        font-size: 20px;
+    }
+}

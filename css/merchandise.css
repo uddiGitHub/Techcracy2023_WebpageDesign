@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 html, body{
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     font-family: 'Bebas Neue', sans-serif;
 }
 label[for="color-toggle"] {
@@ -157,4 +157,7 @@ button:hover:after{
     transform: translateX(300px) skewX(-15deg);
     opacity: 1;
     transition: 1s;
+}
+.foot{
+    position: relative;
 }
