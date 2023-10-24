@@ -240,8 +240,8 @@ html, body{
 }
 .content-box .card .img-box{
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 10px;
     overflow: hidden;
 }
