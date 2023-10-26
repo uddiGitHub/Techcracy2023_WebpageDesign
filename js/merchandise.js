@@ -1,4 +1,5 @@
-document.body.style.backgroundColor = "black";
+document.body.style.backgroundImage = "url('images/background/space.png')";
+document.body.style.backgroundSize = "cover";
 
 const checkbox = document.getElementById("color-toggle");
 const blackHoodie = document.getElementById("black-hoodie");
@@ -8,10 +9,10 @@ checkbox.addEventListener("change", function () {
     if (checkbox.checked) {
         blackHoodie.style.display = "none";
         grayHoodie.style.display = "block";
-        document.body.style.backgroundColor = "lightgray";
+        document.body.style.backgroundImage = "url('images/background/back.jpg')";
     } else {
         blackHoodie.style.display = "block";
         grayHoodie.style.display = "none";
-        document.body.style.backgroundColor = "black";
+        document.body.style.backgroundImage = "url('images/background/space.png')";
     }
 });

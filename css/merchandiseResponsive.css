@@ -1,3 +1,10 @@
+@media (max-width: 860px){
+    #choose>h3{
+        font-size: 4.25em;
+        text-align: center;
+        
+    }
+}
 @media (max-width: 640px) {
     .hoodie>img{
         width: 50%;
@@ -11,8 +18,17 @@
         transform: translateX(50%);
     }
     #choose>h3{
-        font-size: 30px;
+        font-size: 2.25em;
         text-align: center;
         
+    }
+    .hoodie-color>h4{
+        font-size: 3.25em;
+    }
+}
+
+@media (max-width: 400px){
+    .hoodie-color>h4{
+        font-size: 2.25em;
     }
 }
