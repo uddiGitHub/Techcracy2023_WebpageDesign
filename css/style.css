@@ -12,17 +12,21 @@ body {
     font-family: 'Bebas Neue', sans-serif;
     height: 100%;
     width: 100%;
-    background-color: black;
+    scroll-behavior: smooth;
+    
 }
 
 #main {
     position: relative;
     overflow: hidden;
+    background-image: url(../images/background/space.png);
+    
 }
 
 #home {
     height: 100vh;
     width: 100vw;
+    z-index: 1;
 }
 .year-text{
     position: absolute;
@@ -35,6 +39,7 @@ body {
     transform: translateX(-50%);
     font-size: 40rem;
     margin-bottom: 10vh;
+    z-index: -2;
 }
 .year-text, .Techcracy-text{
     font-family: 'Lapsus Pro Bold', 'Bebas Neue',sans-serif;
@@ -95,59 +100,108 @@ body {
     height: 100vh;
     width: 100vw;
     z-index: 2;
+    position: relative;
 }
 
 
-#Events {
+.Events {
     height: 30vh;
     width: 100vw;
-    background-color: red;
+    position: relative;
+    z-index: 3;
+    /* background-color: aquamarine; */
 }
-#Events>h1{
-    font-size: 200px;
-    color: rgb(0, 0, 0);
+.Events>h1{
+    letter-spacing: .6rem;
+    -webkit-text-stroke: 5.5px whitesmoke;
+    color: transparent;
     text-align: center;
-    margin-top: 0vh;
+    font-size: 250px;
+}
+.Events-items{
+    height: 70vh;
+    width: 100vw;
+    background-color: aliceblue;
+    z-index: -1;
+    position: relative;
 }
 
-#gap1{
-    height: 40vh;
+
+#Competitions>h1{
+    letter-spacing: .6rem;
+    -webkit-text-stroke: 5.5px whitesmoke;
+    color: transparent;
+    text-align: center;
+    font-size: 250px;
+}
+#Competitions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Add padding for spacing */
+    text-align: center;
+}
+
+.competitions-items {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: #fff; */
+    width: 70vw;
+    margin: 0 auto; 
+}
+.competitions-items h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    color: whitesmoke;
+}
+.left-items, .right-items {
+    flex-basis: calc(50% - 0px);
+}
+
+.centered-items {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.left-items h3 {
+    text-align: left;
+}
+.right-items h3 {
+    text-align: right;
+}
+
+.right-items {
+    text-align: right;
+}
+.right-items img {
+    transform: scaleX(-1);
+}
+.item-pointer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+
+
+#gap{
+    height: 26vh;
     width: 100vw;
     background-color: transparent;
 }
-.comic {
-    height: 40vh;
+#smallgap{
+    height: 10vh;
     width: 100vw;
-    background-color: rebeccapurple;
-    transform: translateX(400%);
-    transform: transform 4s ease;
-
-}
-.comic:nth-of-type(even){
-    transform: translateX(-400%);
-}
-.comic.show{
-    transform: translateX(0%);
-}
-
-#Competitions {
-    height: 140vh;
-    width: 100vw;
-    background-color: pink;
-}
-#Competitions>h1{
-    font-size: 250px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    margin-top: 0vh;
-}
-#gap{
-    height: 35vh;
-    width: 100vw;
-    background-color: red;
+    background-color: transparent;
 }
 #gap7 {
-    height: 40vh;
+    height: 280vh;
     width: 100vw;
     background-color: transparent;
 }
@@ -155,4 +209,8 @@ body {
     height: 40vh;
     width: 100vw;
     background-color: transparent;
+}
+.foot{
+    position: relative;
+    z-index: 3;
 }

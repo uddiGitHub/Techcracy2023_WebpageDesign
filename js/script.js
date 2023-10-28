@@ -49,8 +49,8 @@ window.addEventListener("resize", function () {
 
 
 function files(index) {
-    const path = "images/realistic/";
-    return `${path}${index.toString().padStart(4, '0')}.webp`;
+    const path = "images/comic/";
+    return `${path}${index.toString().padStart(4, '0')}.png`;
 }
 
 
