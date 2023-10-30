@@ -11,6 +11,3 @@
     font-family: 'Lapsus Pro Bold';
     src: url(../font/lapsus-pro/LapsusPro-Bold.otf) format('opentype');
 }
-html, body{
-    background-image: url(../images/background/space.png);
-}
