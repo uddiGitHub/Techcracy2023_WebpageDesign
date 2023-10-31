@@ -84,10 +84,28 @@
     #neptune {
         background-image: none;
     }
+
+    .hideTitle h4 {
+        font-family: 'Lapsus Pro Bold', sans-serif;
+        text-transform: uppercase;
+        position: absolute;
+        display: block;
+        font-size: 1.5em;
+        color: whitesmoke;
+        text-align: center;
+        letter-spacing: 1px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(251, 251, 251);
+        text-shadow: 3px 12px 0px rgb(10, 10, 10);
+        -webkit-text-stroke: 0.5px black;
+    }
+
     .members-content::before,
     .members-content.three::before,
     .members-content.v-three::before,
-    .members-content.four::before{
+    .members-content.four::before {
         border-left: 2px solid whitesmoke;
         border-right: 2px solid whitesmoke;
         border-top: none;

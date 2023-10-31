@@ -49,6 +49,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.hideTitle h4{
+    display: none;
+}
 
 #mercury {
     background-image: url(../images/gif/mercury.gif);
@@ -337,6 +340,7 @@ body {
 
 .title>h1 {
     font-family: 'Lapsus Pro Bold', sans-serif;
+    text-transform: uppercase;
     font-size: 5.25em;
     letter-spacing: 2px;
     line-height: 1em;
