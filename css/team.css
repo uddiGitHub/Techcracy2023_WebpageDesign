@@ -239,6 +239,7 @@ body {
     padding: 10px;
     height: fit-content;
     backdrop-filter: blur(6px);
+    transition: 0.5s;
  
 
 }
