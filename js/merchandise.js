@@ -9,10 +9,10 @@ checkbox.addEventListener("change", function () {
     if (checkbox.checked) {
         blackHoodie.style.display = "none";
         grayHoodie.style.display = "block";
-        document.body.style.backgroundImage = "url('images/background/back.jpg')";
+        // document.body.style.backgroundImage = "url('images/background/back.jpg')";
     } else {
         blackHoodie.style.display = "block";
         grayHoodie.style.display = "none";
-        document.body.style.backgroundImage = "url('images/background/space.png')";
+        // document.body.style.backgroundImage = "url('images/background/space.png')";
     }
 });

@@ -2,6 +2,8 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent; 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
 }
 @font-face {
     font-family: 'Lapsus Pro Bold';
@@ -47,15 +49,6 @@ body {
     line-height: 108px;
     text-transform: uppercase;
 }
-.speechBubble>img{
-    position: absolute;
-    height: 60vh;
-    width: 60vw;
-    z-index: 3;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 20vh;
-}
 .Techcracy-text{
     position: absolute;
     color:#fff;
@@ -69,7 +62,7 @@ body {
     z-index: 5;
     font-weight: bold;
 
-    text-shadow: 3px 12px 0px rgb(10, 10, 10);
+    text-shadow: 3px 12px 0px rgb(0, 0, 0);
     -webkit-text-stroke: 3px black;
 
     animation-name: focus-in-expand;
