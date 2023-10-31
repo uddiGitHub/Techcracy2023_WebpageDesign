@@ -215,6 +215,7 @@ body {
     justify-content: center;
     align-items: center;
     background: transparent;
+    z-index: 4;
 }
 
 .content-box.active {
@@ -235,6 +236,7 @@ body {
     padding: 10px;
     height: fit-content;
     backdrop-filter: blur(6px);
+ 
 
 }
 
@@ -272,7 +274,6 @@ body {
     letter-spacing: 1px;
     text-shadow: 0 0 10px rgba(233, 158, 243, 0.733);
     line-height: 1em;
-    -webkit-text-stroke: 1px black;
 }
 
 .content-box .card .text-box h2 span {
