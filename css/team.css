@@ -49,6 +49,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.hideTitle h4{
+    display: none;
+}
 
 #mercury {
     background-image: url(../images/gif/mercury.gif);
@@ -215,6 +218,7 @@ body {
     justify-content: center;
     align-items: center;
     background: transparent;
+    z-index: 4;
 }
 
 .content-box.active {
@@ -235,6 +239,8 @@ body {
     padding: 10px;
     height: fit-content;
     backdrop-filter: blur(6px);
+    transition: 0.5s;
+ 
 
 }
 
@@ -272,7 +278,6 @@ body {
     letter-spacing: 1px;
     text-shadow: 0 0 10px rgba(233, 158, 243, 0.733);
     line-height: 1em;
-    -webkit-text-stroke: 1px black;
 }
 
 .content-box .card .text-box h2 span {
@@ -336,6 +341,7 @@ body {
 
 .title>h1 {
     font-family: 'Lapsus Pro Bold', sans-serif;
+    text-transform: uppercase;
     font-size: 5.25em;
     letter-spacing: 2px;
     line-height: 1em;
