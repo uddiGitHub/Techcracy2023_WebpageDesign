@@ -34,3 +34,46 @@
         height: 10vh;
     }
 }
+@media (max-width: 700px){
+    .year-text{
+        font-size: 15rem;
+        -webkit-text-stroke: 3px #fff;
+        margin-top: 8vh;
+        margin-bottom: 10vh;
+    }
+    .Techcracy-text {
+        font-size: 6rem;
+    }
+    #gap{
+        height: 10vh;
+    }
+}
+@media (max-width: 530px){
+    .year-text{
+        font-size: 10rem;
+        -webkit-text-stroke: 2.5px #fff;
+        margin-top: 5vh;
+        margin-bottom: 12vh;
+    }
+    .Techcracy-text {
+        font-size: 4rem;
+    }
+    #gap{
+        height: 8vh;
+    }
+}
+
+@media (max-width: 350px){
+    .year-text{
+        font-size: 8rem;
+        -webkit-text-stroke: 2.5px #fff;
+        margin-top: 5vh;
+        margin-bottom: 12vh;
+    }
+    .Techcracy-text {
+        font-size: 3rem;
+    }
+    #gap{
+        height: 8vh;
+    }
+}

@@ -165,3 +165,9 @@ hr{
     }
 
 }
+@media (max-width: 380px){
+    .copy-right{
+        font-size: 12px;
+        word-wrap: break-word;
+    }
+}
