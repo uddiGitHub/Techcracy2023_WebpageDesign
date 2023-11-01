@@ -41,7 +41,6 @@ body {
     transform: translateX(-50%);
     font-size: 40rem;
     margin-bottom: 10vh;
-    z-index: -2;
 }
 .year-text, .Techcracy-text{
     font-family: 'Lapsus Pro Bold', 'Bebas Neue',sans-serif;
