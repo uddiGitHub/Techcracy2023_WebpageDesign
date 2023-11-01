@@ -113,7 +113,7 @@ body {
     /* background-color: aquamarine; */
 }
 
-.Events>h1 {
+.Events h1 {
     letter-spacing: .6rem;
     -webkit-text-stroke: 5.5px whitesmoke;
     color: transparent;
@@ -264,13 +264,10 @@ body {
     margin-right: 0px;
 }
 
-#Competitions:hover sspan:nth-child(2) {
+#Competitions:hover span:nth-child(2) {
     transition: 0.5s;
     margin-right: 45px;
 }
-span {
-    transform: skewX(15deg) 
-  }
 
   span:nth-child(2) {
     width: fit-content;
@@ -350,7 +347,12 @@ path.two {
 .centered-items{
     z-index: 5;
 }
+#topgap{
+    height: 26vh;
+    width: 100vw;
+    background-color: transparent;
 
+}
 #gap {
     height: 26vh;
     width: 100vw;
@@ -362,17 +364,16 @@ path.two {
     width: 100vw;
     background-color: transparent;
 }
+#largeGap{
+    height: 111vh;
+    width: 100vw;
+    background-color: green;
 
+}
 #gap7 {
     height: 280vh;
     width: 100vw;
-    background-color: transparent;
-}
-
-#gap8 {
-    height: 40vh;
-    width: 100vw;
-    background-color: transparent;
+    background-color: pink;
 }
 
 .foot {

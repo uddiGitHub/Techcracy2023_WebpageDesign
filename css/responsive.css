@@ -6,13 +6,26 @@
     .Techcracy-text {
         font-size: 15rem;
     }
-    #gap{
-        height: 20vh;
-    }
 }
 @media (max-width: 1270px) {
     .Techcracy-text {
         font-size: 12rem;
+    }
+    .Events-items{
+        height: 60vh;
+    }
+    #Competitions {
+        display: inline;
+    }
+    #Competitions>h1{
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        font-size: 130px;
+        text-align: left;
+        margin-left: 5%;
+        letter-spacing: -0.2em;
+        -webkit-text-stroke: 3.5px whitesmoke;
+        transform: scaleX(1.5);
     }
 }
 @media (max-width: 1020px) {
@@ -30,9 +43,6 @@
     .Techcracy-text {
         font-size: 8rem;
     }
-    #gap{
-        height: 10vh;
-    }
 }
 @media (max-width: 700px){
     .year-text{
@@ -44,8 +54,17 @@
     .Techcracy-text {
         font-size: 6rem;
     }
+    #topgap{
+        height: 10vh
+    
+    }
     #gap{
-        height: 10vh;
+        height: 22vh;
+    }
+}
+@media (max-width: 650px){
+    .Events>h1{
+        font-size: 200px;
     }
 }
 @media (max-width: 530px){
@@ -58,8 +77,9 @@
     .Techcracy-text {
         font-size: 4rem;
     }
-    #gap{
-        height: 8vh;
+    .Events>h1{
+        font-size: 130px;
+        -webkit-text-stroke: 3.5px whitesmoke;
     }
 }
 
@@ -73,7 +93,8 @@
     .Techcracy-text {
         font-size: 3rem;
     }
-    #gap{
-        height: 8vh;
+    .Events>h1{
+        font-size: 90px;
+        -webkit-text-stroke: 3px whitesmoke;
     }
 }
