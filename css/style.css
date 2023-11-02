@@ -124,15 +124,22 @@ body {
 .Events-items {
     height: 70vh;
     width: 100vw;
-    /* background-color: aliceblue; */
-    z-index: -1;
+    background-color: transparent;
+    background-image: url(../images/custom/chandrayan2.png);
+    z-index: 1;
     position: relative;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
 }
+
 #Competitions {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    padding-top: 40px;
     /* Add padding for spacing */
     text-align: center;
 }
@@ -144,14 +151,16 @@ body {
     text-align: center;
     font-size: 250px;
 }
+
 .competitions-items {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* background-color: #fff; */
     width: 70vw;
     margin: 0 auto;
 }
-.competitions-items-container{
+
+.competitions-items-container {
     margin-bottom: 7vh;
 }
 
@@ -197,7 +206,8 @@ body {
     margin-top: 10px;
 
 }
-#Competitions>h2{
+
+#Competitions>h2 {
     font-size: 3.5rem;
     margin: 0;
     padding: 0;
@@ -216,7 +226,8 @@ body {
     transform: translateX(-32%);
     top: -20vh;
 }
-#Competitions>span{
+
+#Competitions>span {
     font-size: 1rem;
     margin: 0;
     padding: 0;
@@ -235,7 +246,8 @@ body {
     transform: translateX(-32%);
     top: -20vh;
 }
-#Competitions>a{
+
+#Competitions>a {
     z-index: 5;
     position: relative;
     left: 30%;
@@ -252,13 +264,16 @@ body {
     transform: skewX(-15deg);
     border: 2px solid whitesmoke;
 }
-#Competitions>a:focus{
+
+#Competitions>a:focus {
     outline: none;
 }
-#Competitions>a:hover{
+
+#Competitions>a:hover {
     transition: 0.5s;
     box-shadow: 10px 10px 0 red;
 }
+
 #Competitions span:nth-child(2) {
     transition: 0.5s;
     margin-right: 0px;
@@ -269,12 +284,17 @@ body {
     margin-right: 45px;
 }
 
-  span:nth-child(2) {
+svg {
+    width: 66px;
+    height: 43px;
+}
+
+span:nth-child(2) {
     width: fit-content;
     margin-left: 30px;
     position: relative;
     top: 12%;
-  }
+}
 
 /**************SVG****************/
 
@@ -308,9 +328,11 @@ path.two {
     0% {
         fill: white;
     }
+
     50% {
         fill: red;
     }
+
     100% {
         fill: white;
     }
@@ -331,32 +353,40 @@ path.two {
     font-size: 1.3rem;
     background-color: rgba(67, 67, 67, 0.395);
 }
+
 .description-right {
     margin-right: 15px;
     padding-left: 25px;
     border-right: 4px double whitesmoke;
     margin-left: 180px;
 }
-.description-left{
+
+.description-left {
     margin-left: 15px;
     padding-left: 25px;
     padding-right: 15px;
     border-left: 4px double whitesmoke;
     margin-right: 180px;
 }
-.centered-items{
+
+.centered-items {
     z-index: 5;
 }
-#topgap{
+
+#topgap {
     height: 26vh;
     width: 100vw;
     background-color: transparent;
 
 }
+
 #gap {
     height: 26vh;
     width: 100vw;
     background-color: transparent;
+}
+#gaphidden {
+    display: none;
 }
 
 #smallgap {
@@ -364,12 +394,14 @@ path.two {
     width: 100vw;
     background-color: transparent;
 }
-#largeGap{
+
+#largeGap {
     height: 111vh;
     width: 100vw;
     background-color: green;
 
 }
+
 #gap7 {
     height: 280vh;
     width: 100vw;
