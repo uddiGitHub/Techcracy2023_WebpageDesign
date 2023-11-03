@@ -189,11 +189,11 @@ body {
     border-top: 8px dotted whitesmoke;
     animation-name: scale_pulse;
 }
-.members-content.four::before {
+/* .members-content.four::before {
     inset: 40px;
     border: 8px dotted whitesmoke;
     animation-name: scale_pulse;
-}
+} */
 
 @keyframes scale_pulse {
     0% {
