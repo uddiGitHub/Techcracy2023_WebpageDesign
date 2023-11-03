@@ -17,7 +17,7 @@ body {
     height: 100%;
     width: 100%;
     scroll-behavior: smooth;
-
+    background-color: #f8f7ed;
 }
 
 #main {
@@ -374,7 +374,7 @@ path.two {
 }
 
 #topgap {
-    height: 26vh;
+    height: 28vh;
     width: 100vw;
     background-color: transparent;
 
@@ -385,6 +385,7 @@ path.two {
     width: 100vw;
     background-color: transparent;
 }
+
 #gaphidden {
     display: none;
 }
@@ -396,16 +397,10 @@ path.two {
 }
 
 #largeGap {
-    height: 111vh;
+    height: 50vh;
     width: 100vw;
-    background-color: green;
+    /* background-color: green; */
 
-}
-
-#gap7 {
-    height: 280vh;
-    width: 100vw;
-    background-color: pink;
 }
 
 .foot {

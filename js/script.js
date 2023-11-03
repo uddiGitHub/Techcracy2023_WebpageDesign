@@ -62,7 +62,7 @@ const imageSeq = {
     frame: 1,
 };
 
-for (let i = 1; i < frameCount; i++) {
+for (let i = 1; i <= frameCount; i++) {
     const img = new Image();
     img.src = files(i);
     images.push(img);

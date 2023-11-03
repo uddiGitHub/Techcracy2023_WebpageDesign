@@ -29,7 +29,16 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/sponsor.css">
+    <link rel="stylesheet" href="css/preloader.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- locomotive css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
@@ -40,187 +49,234 @@
 </head>
 
 <body>
-    <!-- Navigation bar -->
-    <header class="header">
-        <nav>
-            <label class="logo"><img src="./logo/techcracyLogo.png" alt="Techcracy logo"></label>
+    
+    <section id="displayer">
+        <!-- Navigation bar -->
+        <header class="header">
+            <nav>
+                <label class="logo"><img src="./logo/techcracyLogo.png" alt="Techcracy logo"></label>
 
-            <input type="checkbox" id="nav-check">
-            <label for="nav-check" class="icons">
-                <i class='bx bx-menu-alt-right' id="menu-icon"></i>
-                <i class='bx bx-x' id="close-icon"></i>
-            </label>
-            <ul id="menu-ul">
-                <li>
-                    <a href="#">Events</a>
-                    <a href="competitions.html">Competitions</a>
-                    <a href="Merchandise.html">Merchandise</a>
-                    <a href="team.html">Team</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <div id="main">
-            <div id="home">
-                <div id="topgap"></div>
-                <div class="year-text">2023</div>
-                <div class="Techcracy-text">Techcracy!</div>
-                <canvas id="canvas"></canvas>
-            </div>
-            <div id="gap"></div>
-            <div id="gap"></div>
-            <div id="gap"></div>
-            <div id="gap"></div>
-            <div id="smallgap"></div>
-            <div class="Events">
-                <h1>Events</h1>
-            </div>
-            <div class="Events-items">
+                <input type="checkbox" id="nav-check">
+                <label for="nav-check" class="icons">
+                    <i class='bx bx-menu-alt-right' id="menu-icon"></i>
+                    <i class='bx bx-x' id="close-icon"></i>
+                </label>
+                <ul id="menu-ul">
+                    <li>
+                        <a href="#">Events</a>
+                        <a href="competitions.html">Competitions</a>
+                        <a href="Merchandise.html">Merchandise</a>
+                        <a href="team.html">Team</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div id="main">
+                <div id="home">
+                    <div id="topgap"></div>
+                    <div class="year-text">2023</div>
+                    <div class="Techcracy-text">Techcracy!</div>
+                    <canvas id="canvas"></canvas>
+                </div>
+                <div id="gap"></div>
+                <div id="gap"></div>
+                <div id="gap"></div>
+                <div id="gap"></div>
+                <div id="smallgap"></div>
+                <div class="Events">
+                    <h1>Events</h1>
+                </div>
+                <div class="Events-items">
 
-            </div>
-            <div id="gaphidden"></div>
-            <div id="Competitions">
-                <h1>Competitions</h1>
-                <div class="competitions-items">
-                    <div class="left-items">
-                        <div class="competitions-items-container">
-                            <div class="item-pointer">
-                                <img src="images/custom/pointer.png" alt="pointer">
-                                <h3>Robotics</h3>
+                </div>
+                <div id="gaphidden"></div>
+                <div id="Competitions">
+                    <h1>Competitions</h1>
+                    <div class="competitions-items">
+                        <div class="left-items">
+                            <div class="competitions-items-container">
+                                <div class="item-pointer">
+                                    <img src="images/custom/pointer.png" alt="pointer">
+                                    <h3>Robotics</h3>
+                                </div>
+                                <p class="description-left"> Unleash the Power of Innovation and Automation!<br>Step
+                                    into
+                                    the future at our robotics competition,where machines rule the arena!</p>
                             </div>
-                            <p class="description-left"> Unleash the Power of Innovation and Automation!<br>Step into
-                                the future at our robotics competition,where machines rule the arena!</p>
+                            <div class="competitions-items-container">
+                                <div class="item-pointer">
+                                    <img src="images/custom/pointer.png" alt="pointer">
+                                    <h3>Art & Craft</h3>
+                                </div>
+                                <p class="description-left"> Immerse yourself in a world of boundless creativity and
+                                    self-expression at our Art & Craft competition, where imagination takes form!</p>
+                            </div>
+                            <div class="competitions-items-container">
+                                <div class="item-pointer">
+                                    <img src="images/custom/pointer.png" alt="pointer">
+                                    <h3>Flim Making</h3>
+                                </div>
+                                <p class="description-left"> Lights, camera, action!<br>Step into the world of cinematic
+                                    creativity at our Film Making competition, where stories come to life on the silver
+                                    screen!</p>
+                            </div>
+                            <div class="competitions-items-container">
+                                <div class="item-pointer">
+                                    <img src="images/custom/pointer.png" alt="pointer">
+                                    <h3>Treasure Hunt</h3>
+                                </div>
+                                <p class="description-left">Get ready for an exhilarating quest in our Treasure Hunt
+                                    competition, Where X Marks the Spot of Thrills and Mysteries!</p>
+                            </div>
                         </div>
-                        <div class="competitions-items-container">
-                            <div class="item-pointer">
-                                <img src="images/custom/pointer.png" alt="pointer">
-                                <h3>Art & Craft</h3>
+                        <div class="right-items">
+                            <div class="competitions-items-container">
+                                <div class="item-pointer">
+                                    <h3>Insomnia</h3>
+                                    <img src="images/custom/pointer.png" alt="pointer">
+                                </div>
+                                <p class="description-right">A Battle for Supremacy in the World of Esports!<br>Join us
+                                    in
+                                    the ultimate gaming showdown.</p>
                             </div>
-                            <p class="description-left"> Immerse yourself in a world of boundless creativity and
-                                self-expression at our Art & Craft competition, where imagination takes form!</p>
-                        </div>
-                        <div class="competitions-items-container">
-                            <div class="item-pointer">
-                                <img src="images/custom/pointer.png" alt="pointer">
-                                <h3>Flim Making</h3>
+                            <div class="competitions-items-container">
+                                <div class="item-pointer">
+                                    <h3>Code War</h3>
+                                    <img src="images/custom/pointer.png" alt="pointer">
+                                </div>
+                                <p class="description-right">Prepare to enter the realm of 1s and 0s,where algorithms
+                                    clash
+                                    in a digital battle royale!<br>Join us for a digital showdown like no other, where
+                                    victory belongs to those who can make machines dance to their tunes.</p>
                             </div>
-                            <p class="description-left"> Lights, camera, action!<br>Step into the world of cinematic
-                                creativity at our Film Making competition, where stories come to life on the silver
-                                screen!</p>
-                        </div>
-                        <div class="competitions-items-container">
-                            <div class="item-pointer">
-                                <img src="images/custom/pointer.png" alt="pointer">
-                                <h3>Treasure Hunt</h3>
+                            <div class="competitions-items-container">
+                                <div class="item-pointer">
+                                    <h3>Capture The Flag</h3>
+                                    <img src="images/custom/pointer.png" alt="pointer">
+                                </div>
+                                <p class="description-right">Gear up for an adrenaline-fueled adventure at our Capture
+                                    the
+                                    Flag competition, where strategy meets stealth in an epic battle!</p>
                             </div>
-                            <p class="description-left">Get ready for an exhilarating quest in our Treasure Hunt
-                                competition, Where X Marks the Spot of Thrills and Mysteries!</p>
                         </div>
                     </div>
-                    <div class="right-items">
-                        <div class="competitions-items-container">
-                            <div class="item-pointer">
-                                <h3>Insomnia</h3>
-                                <img src="images/custom/pointer.png" alt="pointer">
-                            </div>
-                            <p class="description-right">A Battle for Supremacy in the World of Esports!<br>Join us in
-                                the ultimate gaming showdown.</p>
+                    <h2>And many more...</h2>
+                    <a class="cta" href="competitions.html">
+                        <span>Explore All</span>
+                        <span>
+                            <svg viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <path class="one"
+                                        d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                                        fill="#FFFFFF"></path>
+                                    <path class="two"
+                                        d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                                        fill="#FFFFFF"></path>
+                                    <path class="three"
+                                        d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                                        fill="#FFFFFF"></path>
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
+
+
+                </div>
+                <div id="largeGap"></div>
+                <div class="sponsors">
+                    <h2>Previous Sponsors</h2>
+                    <div class="sponsors-logo-slider">
+
+
+                        <div class="sponsors-item"><a href="#"><img src="images/sponsors/Bank_of_India_logo_PNG2.png"
+                                    alt="Bank of India"></a></div>
+                        <div class="sponsors-item"><a href="#"><img src="images/sponsors/Britannia Industries.svg"
+                                    alt="Britannia Industries"></a></div>
+                        <div class="sponsors-item"><a href="#"><img src="images/sponsors/Fastrack_logo.png"
+                                    alt="fastrack"></a></div>
+                        <div class="sponsors-item"><a href="#"><img src="images/sponsors/hyundai-motor-company.svg"
+                                    alt="Hyundai Motor Company"></a></div>
+                        <div class="sponsors-item"><a href="#"><img src="images/sponsors/ktm-logo.svg" alt="KTM"></a>
                         </div>
-                        <div class="competitions-items-container">
-                            <div class="item-pointer">
-                                <h3>Code War</h3>
-                                <img src="images/custom/pointer.png" alt="pointer">
-                            </div>
-                            <p class="description-right">Prepare to enter the realm of 1s and 0s,where algorithms clash
-                                in a digital battle royale!<br>Join us for a digital showdown like no other, where
-                                victory belongs to those who can make machines dance to their tunes.</p>
+                        <div class="sponsors-item"><a href="#"><img src="images/sponsors/NTPC_Logo.png" alt="NTPL"></a>
                         </div>
-                        <div class="competitions-items-container">
-                            <div class="item-pointer">
-                                <h3>Capture The Flag</h3>
-                                <img src="images/custom/pointer.png" alt="pointer">
-                            </div>
-                            <p class="description-right">Gear up for an adrenaline-fueled adventure at our Capture the
-                                Flag competition, where strategy meets stealth in an epic battle!</p>
+                        <div class="sponsors-item"><a href="#"><img src="images/sponsors/royalenfield.jpg"
+                                    alt="Royal Enfield"></a></div>
+                        <div class="sponsors-item"><a href="#"><img src="images/sponsors/sbi.png" alt="SBI"></a></div>
+                        <div class="sponsors-item"><a href="#"><img
+                                    src="images/sponsors/Zee_entertainment_enterprises_logo.svg.png" alt="Zee"></a>
                         </div>
+
+
+
                     </div>
                 </div>
-                <h2>And many more...</h2>
-                <a class="cta" href="competitions.html">
-                    <span>Explore All</span>
-                    <span>
-                        <svg  viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                            <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                            <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
-                          </g>
-                        </svg>
-                      </span> 
-                </a>
-
-
+                <div class="foot">
+                    <footer>
+                        <div class="row">
+                            <div class="col">
+                                <img src="logo/techcracyLogo.png" alt="footerLogo">
+                                <p>
+                                    Central Institute of Technology Kokrajhar presents Techcracy, the ultimate tech
+                                    festival
+                                    in the BTR
+                                    region. Join us for competitions, workshops, and inspiring talks that celebrate
+                                    innovation and
+                                    creativity. Stay tuned for updates and be a part of the innovation wave at
+                                    Techcracy!
+                                </p>
+                            </div>
+                            <div class="col">
+                                <h3>
+                                    Contact us
+                                    <div class="underline"><span></span></div>
+                                </h3>
+                                <p>Central Institute of Technology, Kokrajhar</p>
+                                <p>PO: Rangalikhata, Dist: Kokrajhar</p>
+                                <p>BTAD, Assam 783370</p>
+                                <p class="website"><a href="https://www.cit.ac.in/">cit.ac.in</a></p>
+                            </div>
+                            <div class="col">
+                                <h3>
+                                    Follow us
+                                    <div class="underline"><span></span></div>
+                                </h3>
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dont-click">
+                            <button>
+                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                                    <h5>Don't click</h5>
+                                </a>
+                            </button>
+                        </div>
+                        <div>
+                            <p class="copy-right">Developed and Managed by: Uddipta Deka, Hirakjyoti Talukdar</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="copy-right">&copy; 2023 Techcracy 2023.</p>
+                        </div>
+                    </footer>
+                </div>
             </div>
-            <div id="largeGap"></div>
-            <div class="foot">
-                <footer>
-                    <div class="row">
-                        <div class="col">
-                            <img src="logo/techcracyLogo.png" alt="footerLogo">
-                            <p>
-                                Central Institute of Technology Kokrajhar presents Techcracy, the ultimate tech festival
-                                in the BTR
-                                region. Join us for competitions, workshops, and inspiring talks that celebrate
-                                innovation and
-                                creativity. Stay tuned for updates and be a part of the innovation wave at Techcracy!
-                            </p>
-                        </div>
-                        <div class="col">
-                            <h3>
-                                Contact us
-                                <div class="underline"><span></span></div>
-                            </h3>
-                            <p>Central Institute of Technology, Kokrajhar</p>
-                            <p>PO: Rangalikhata, Dist: Kokrajhar</p>
-                            <p>BTAD, Assam 783370</p>
-                            <p class="website"><a href="https://www.cit.ac.in/">cit.ac.in</a></p>
-                        </div>
-                        <div class="col">
-                            <h3>
-                                Follow us
-                                <div class="underline"><span></span></div>
-                            </h3>
-                            <ul class="social-links">
-                                <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="dont-click">
-                        <button>
-                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                                <h5>Don't click</h5>
-                            </a>
-                        </button>
-                    </div>
-                    <div>
-                        <p class="copy-right">Developed and Managed by: Uddipta Deka, Hirakjyoti Talukdar</p>
-                    </div>
-                    <hr>
-                    <div>
-                        <p class="copy-right">&copy; 2023 Techcracy 2023.</p>
-                    </div>
-                </footer>
-            </div>
-        </div>
+        </section>
     </section>
-    <section>
-        <div class="loader"></div>
-    </section>
+    <div id="preloader">
+        <img src="images/preloader/image_processing20210907-2906-1epecum.gif">
+    </div>
+
+    <!-- js -->
+    <script src="js/preloader.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
@@ -229,8 +285,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
         integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="js/script.js"></script>
-    <!-- <script src ="js/style.js"></script> -->
+    <script src="js/sponsor.js"></script>
 </body>
 
 </html>
