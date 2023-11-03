@@ -1,36 +1,347 @@
 @media (max-width: 1700px) {
-    .year-text{
+    .year-text {
         font-size: 25rem;
         -webkit-text-stroke: 4.5px #fff;
     }
+
     .Techcracy-text {
         font-size: 15rem;
     }
-    #gap{
-        height: 20vh;
-    }
 }
+
 @media (max-width: 1270px) {
     .Techcracy-text {
         font-size: 12rem;
     }
+
+    .Events-items {
+        height: 60vh;
+    }
+
+    #Competitions>h1 {
+        font-size: 180px;
+    }
+
+    #gap {
+        height: 30vh;
+    }
+
+    .description-right,
+    .description-left {
+        font-size: .8rem;
+    }
+
+    .description-right {
+        margin-left: 10vw;
+    }
+
+    .description-left {
+        margin-right: 10vw;
+    }
+
+    .competitions-items h3 {
+        font-size: 2.5rem;
+    }
+
+    #Competitions>h2 {
+        font-size: 2.5rem;
+    }
+
+    #Competitions>span {
+        font-size: 2.5rem;
+    }
+
+    #Competitions>a {
+        transition: 0.5s;
+        box-shadow: 10px 10px 0 red;
+    }
+
+    .cta path.three {
+        animation: color_anim 1s infinite 0.2s;
+    }
+
+    .cta path.one {
+        transform: translateX(0%);
+        animation: color_anim 1s infinite 0.6s;
+    }
+
+    .cta path.two {
+        transform: translateX(0%);
+        animation: color_anim 1s infinite 0.4s;
+    }
+
+    .competitions-items-container {
+        margin-bottom: 6vh;
+    }
+
+    #gap {
+        height: 26vh;
+    }
+
 }
+
 @media (max-width: 1020px) {
     .Techcracy-text {
         font-size: 10rem;
     }
+
+    .Events>h1 {
+        font-size: 12.5rem;
+        -webkit-text-stroke: 4.5px whitesmoke;
+    }
+
+    #Competitions>h1 {
+        font-size: 150px;
+        -webkit-text-stroke: 4.5px whitesmoke;
+    }
+
+    .description-right,
+    .description-left {
+        font-size: .5rem;
+    }
+
+    .description-right {
+        margin-left: 15vw;
+    }
+
+    .description-left {
+        margin-right: 15vw;
+    }
+
+    .competitions-items h3 {
+        font-size: 1.5rem;
+    }
+
+    #Competitions>a {
+        font-size: 1.5rem;
+        top: -16vh;
+    }
+
+    #Competitions>h2 {
+        font-size: 1.5rem;
+        top: -16vh;
+    }
+
+    #Competitions>span {
+        font-size: .5rem;
+    }
+
+    svg {
+        width: 24px;
+        height: 16px;
+    }
+
+    .competitions-items-container {
+        margin-bottom: 5vh;
+    }
 }
+
 @media (max-width: 860px) {
-    .year-text{
+    .year-text {
         font-size: 18rem;
         -webkit-text-stroke: 3.5px #fff;
         margin-top: 8vh;
         margin-bottom: 10vh;
     }
+
     .Techcracy-text {
         font-size: 8rem;
     }
-    #gap{
-        height: 10vh;
+
+    .Events>h1 {
+        font-size: 9.5rem;
+        -webkit-text-stroke: 4.5px whitesmoke;
+    }
+
+    #Competitions>h1 {
+        font-size: 120px;
+        -webkit-text-stroke: 4.5px whitesmoke;
+    }
+
+    .competitions-items {
+        justify-content: space-between;
+        margin: 0 10px;
+        width: 90vw;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .year-text {
+        font-size: 15rem;
+        -webkit-text-stroke: 3px #fff;
+        margin-top: 8vh;
+        margin-bottom: 10vh;
+    }
+
+    .Techcracy-text {
+        font-size: 6rem;
+    }
+
+    #topgap {
+        height: 10vh
+    }
+}
+
+@media (max-width: 650px) {
+    .Events {
+        height: fit-content;
+    }
+
+    .Events-items {
+        height: 90vh;
+    }
+
+    #gaphidden {
+        display: block;
+        height: 15vh;
+    }
+
+    .Events>h1 {
+        font-size: 7.5rem;
+        -webkit-text-stroke: 4.5px whitesmoke;
+    }
+
+    #Competitions>h1 {
+        font-size: 100px;
+        -webkit-text-stroke: 4.5px whitesmoke;
+    }
+
+    #Competitions {
+        padding: 5px;
+        justify-content: space-between;
+    }
+
+    .competitions-items {
+        justify-content: space-between;
+        margin: 0 10px;
+        width: 90vw;
+    }
+
+    #gap {
+        height: 20vh;
+    }
+
+    #smallgap {
+        height: 0vh;
+    }
+
+    .competitions-items-container {
+        margin-bottom: 8vh;
+    }
+
+    .description-right,
+    .description-left {
+        font-size: 1rem;
+    }
+
+    #Competitions>a {
+        font-size: 1.5rem;
+        top: -29vh;
+    }
+
+    #Competitions>h2 {
+        font-size: 1.5rem;
+        top: -29vh;
+    }
+
+    .description-right {
+        margin-left: 12vw;
+    }
+
+    .description-left {
+        margin-right: 12vw;
+    }
+}
+
+@media (max-width: 530px) {
+    .year-text {
+        font-size: 10rem;
+        -webkit-text-stroke: 2.5px #fff;
+        margin-top: 5vh;
+        margin-bottom: 12vh;
+    }
+
+    .Techcracy-text {
+        font-size: 4rem;
+    }
+
+    .Events>h1 {
+        font-size: 5rem;
+        -webkit-text-stroke: 3.5px whitesmoke;
+    }
+
+    #Competitions>h1 {
+        font-size: 70px;
+        -webkit-text-stroke: 3.5px whitesmoke;
+    }
+}
+
+@media (max-width: 400px) {
+    .year-text {
+        font-size: 8rem;
+        -webkit-text-stroke: 2.5px #fff;
+        margin-top: 7vh;
+        margin-bottom: 12vh;
+    }
+
+    .Techcracy-text {
+        font-size: 4rem;
+    }
+
+    .Events>h1 {
+        font-size: 4rem;
+        -webkit-text-stroke: 3px whitesmoke;
+    }
+
+    #Competitions>h1 {
+        font-size: 50px;
+        -webkit-text-stroke: 3px whitesmoke;
+    }
+
+    .competitions-items h3 {
+        font-size: 1.1rem;
+    }
+
+    .competitions-items img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .description-right,
+    .description-left {
+        font-size: .7rem;
+    }
+
+    .description-right {
+        margin-left: 6vw;
+    }
+
+    .description-left {
+        margin-right: 6vw;
+    }
+
+    #Competitions>a {
+        font-size: 1.1rem;
+        top: -25vh;
+    }
+
+    #Competitions>h2 {
+        font-size: 1.1rem;
+        top: -25vh;
+    }
+
+    #Competitions>a {
+        left: 28%;
+        transform: translateX(-28%);
+        transform: skewX(-15deg);
+        box-shadow: 6px 6px 0 red
+    }
+    #Competitions>span{
+        font-size: .8rem;
+    }
+    svg{
+        width: 21px;
+        height: 14px;
     }
 }
