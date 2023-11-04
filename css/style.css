@@ -18,6 +18,7 @@ body {
     width: 100%;
     scroll-behavior: smooth;
     background-color: #f8f7ed;
+    overflow-anchor: none;
 }
 
 #main {
@@ -95,8 +96,8 @@ body {
 }
 
 #canvas {
-    height: 100%;
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
     z-index: 2;
     position: relative;
     pointer-events: none;
