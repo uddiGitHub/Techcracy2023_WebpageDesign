@@ -352,3 +352,77 @@ body {
     text-shadow: 3px 12px 0px rgb(10, 10, 10);
     -webkit-text-stroke: 3px black;
 }
+
+/* word animation */
+/* .showWord{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: relative;
+    padding: 1.5rem 2rem;;
+}
+.showWord:last-child {
+	padding-bottom: 40vh;
+}
+
+.showWord--full {
+	padding: 0;
+}
+.showWord--highlight p {
+	font-size: clamp(1rem,3vw,2rem);
+}
+
+.reveal-type{
+    margin: .5rem auto;
+    max-width: 90%;
+    font-size: 4.5rem;
+	line-height: 0.8;
+	counter-increment: section;
+	text-align: center;
+	display: flex;
+	gap: 2rem;
+    color: whitesmoke;
+}
+.reveal-type--left {
+	text-align: left;
+}
+
+.reveal-type--right {
+	text-align: right;
+}
+
+.reveal-type::before {
+	content: '.'counter(section);
+	font-weight: 400;
+	display: none;
+	font-size: 1rem;
+	margin-bottom: 10vh;
+	text-align: center;
+}
+
+.reveal-type--sides {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: 100%;
+	text-align: left;
+	gap: 2rem;
+}
+
+.reveal-type--sides span:last-child {
+	justify-self: end;
+} */
+
+.showWord{
+    padding: 0 clamp(1rem,3vw,2rem);
+    display: grid;
+    place-content: center;
+    /* background-color: aqua; */
+}
+.reveal-type{
+    margin: 10rem auto;
+    /* max-width: 90%; */
+    text-align: center;
+    font-size: 4.5rem;
+    line-height: 0.8;
+    color: whitesmoke;
+}
