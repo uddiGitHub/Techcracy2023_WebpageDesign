@@ -27,8 +27,9 @@ splitTypes.forEach((char) => {
         scrollTrigger: {
             trigger: char,
             start: 'center center',
-            end: '+=300%',
+            end: '+=100%',
             scrub: 2,
+            markers: true,
             pin: char.parentNode,
         },
         stagger: {
