@@ -7,7 +7,7 @@
     right: 0;
     width: 300px;
     height: 300px;
-    display: none;
+    display: block;
 }
 #preloader img{
     width: 100%;
@@ -15,7 +15,7 @@
     object-fit: contain;
 }
 #displayer{
-    display: block;
+    display: none;
 }
 /* @media (max-width: 450px){
     #displayer{

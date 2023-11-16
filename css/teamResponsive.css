@@ -1,4 +1,17 @@
 @media (max-width: 1460px) {
+    html,
+    body {
+        animation: slowlyRepeat 120s linear infinite;
+    }
+    @keyframes slowlyRepeat {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: 100% 100%;
+        }
+    }
+
     .title {
         display: none;
     }
@@ -43,6 +56,18 @@
 }
 
 @media (max-width: 730px) {
+    html,
+    body {
+        animation: slowlyRepeat 120s linear infinite;
+    }
+    @keyframes slowlyRepeat {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: 100% 100%;
+        }
+    }
     .container {
         width: 400px;
         height: 400px;
@@ -92,6 +117,18 @@
 }
 
 @media (max-width: 530px) {
+    html,
+    body {
+        animation: slowlyRepeat 180s linear infinite;
+    }
+    @keyframes slowlyRepeat {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: 100% 100%;
+        }
+    }
     .container {
         width: 280px;
         height: 280px;
@@ -144,10 +181,10 @@
     }
 
     .reveal-type {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
-    .themeHighlight {
-        font-size: .5rem;
+    .showWord .themeHighlight {
+        font-size: .6rem;
     }
 }

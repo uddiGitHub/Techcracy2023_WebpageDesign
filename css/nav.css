@@ -83,8 +83,23 @@ a:hover {
     cursor: pointer;
     display: none;
 }
+@media (max-width: 1850px){
+    nav{
+        width: 40vw;
+    }
+}
+@media (max-width: 1520px){
+    nav{
+        width: 50vw;
+    }
+}
+@media (max-width: 1210px){
+    nav{
+        width: 60vw;
+    }
+}
 
-@media (max-width: 1790px) {
+@media (max-width: 970px) {
     .logo>img {
         margin-top: 10px;
         margin-left: 10px;
