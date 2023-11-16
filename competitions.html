@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/competitions.css">
+    <link rel="stylesheet" href="css/preloader.css">
 
     <!-- bar -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -38,938 +39,970 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav>
-            <label class="logo"><img src="logo/techcracyLogo.png" alt="Techcracy logo"></label>
+    <section id="displayer">
+        <header class="header">
+            <nav>
+                <label class="logo"><img src="logo/techcracyLogo.png" alt="Techcracy logo"></label>
 
-            <input type="checkbox" id="nav-check">
-            <label for="nav-check" class="icons">
-                <i class='bx bx-menu-alt-right' id="menu-icon"></i>
-                <i class='bx bx-x' id="close-icon"></i>
-            </label>
-            <ul id="menu-ul">
-                <li>
-                    <a href="index.html">Home</a>
-                    <a href="#">Events</a>
-                    <a href="competitions.html" class="active">Competitions</a>
-                    <a href="Merchandise.html">Merchandise</a>
-                    <a href="team.html">Team</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Insomnia -->
-    <section id="competition">
-        <div class="container">
-            <h1 class="section-heading">Insomnia</h1>
-        </div>
-        <div class="container">
-            <div class="swiper competition-slider">
-                <div class="swiper-wrapper">
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/insomnia/Valo.png" alt="Insomnia">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Valorant</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-                    <!-- slide-end -->
-
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/insomnia/Tekken.jpg" alt="Insomnia">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Tekken</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-                    <!-- slide-end -->
-
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/insomnia/Bgmi.jpg" alt="Insomnia">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Bgmi</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-                    <!-- slide-end -->
-
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/insomnia/Fifa.jpg" alt="Insomnia">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Fifa 23</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-
-                    <!-- slide-end -->
-                </div>
-                <div class="competition-slider-control">
-                    <div class="swiper-button-prev slider-arrow">
-                        <!-- <ion-icon name="arrow-back-outline"></ion-icon> -->
-                        <img src="images/custom/pointer.png">
-                    </div>
-                    <div class="swiper-button-next slider-arrow">
-                        <!-- <ion-icon name="arrow-forward-outline"></ion-icon> -->
-                        <img src="images/custom/pointer.png">
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- for coding competitions -->
-    <section id="competition">
-        <div class="container">
-            <h1 class="section-heading">Code Wars</h1>
-        </div>
-        <div class="container">
-            <div class="swiper competition-slider">
-                <div class="swiper-wrapper">
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/codeing/photo-1551033406-611cf9a28f67.jpg" alt="codeing">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Coding challenge</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                              </p>
-                              <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                              </p>
-                              <p class="card_description">
-                                Dedicated to making the digital world more user-friendly,
-                                I specialize in UI/UX design and interface optimization.
-                              </p>
-                              <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-                    <!-- slide-end -->
-
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/codeing/Hackathon.jpg" alt="codeing">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Hackathon</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-                    <!-- slide-end -->
-
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/codeing/uiux.jpg" alt="codeing">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">UI/UX Competition</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-                    <!-- slide-end -->
-
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/codeing/Technical_Comp.jpg" alt="codeing">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Technical Quiz</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-
-                    <!-- slide-end -->
-                </div>
-                <div class="competition-slider-control">
-                    <div class="swiper-button-prev slider-arrow">
-                        <!-- <ion-icon name="arrow-back-outline"></ion-icon> -->
-                        <img src="images/custom/pointer.png">
-                    </div>
-                    <div class="swiper-button-next slider-arrow">
-                        <!-- <ion-icon name="arrow-forward-outline"></ion-icon> -->
-                        <img src="images/custom/pointer.png">
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Robotics competitions -->
-    <section id="competition">
-        <div class="container">
-            <h1 class="section-heading">Robotics</h1>
-        </div>
-        <div class="container">
-            <div class="swiper competition-slider">
-                <div class="swiper-wrapper">
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/robotics/robowar.jpg" alt="robotics">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Robo War</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                              </p>
-                              <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                              </p>
-                              <p class="card_description">
-                                Dedicated to making the digital world more user-friendly,
-                                I specialize in UI/UX design and interface optimization.
-                              </p>
-                              <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-                    <!-- slide-end -->
-
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/robotics/robosoccer.jpg" alt="robotics">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Robo Soccer</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-                    <!-- slide-end -->
-
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/robotics/linefollower.jpg" alt="robotics">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Line Follower</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-                    <!-- slide-end -->
-
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/robotics/hovercraft.jpg" alt="robotics">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Hovercraft</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-
-                    <!-- slide-end -->
-                </div>
-                <div class="competition-slider-control">
-                    <div class="swiper-button-prev slider-arrow">
-                        <!-- <ion-icon name="arrow-back-outline"></ion-icon> -->
-                        <img src="images/custom/pointer.png">
-                    </div>
-                    <div class="swiper-button-next slider-arrow">
-                        <!-- <ion-icon name="arrow-forward-outline"></ion-icon> -->
-                        <img src="images/custom/pointer.png">
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- art abd crafting -->
-    <section id="competition">
-        <div class="container">
-            <h1 class="section-heading">Art and Craft</h1>
-        </div>
-        <div class="container">
-            <div class="swiper competition-slider">
-                <div class="swiper-wrapper">
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/art_craft/bottle painting.jpg" alt="art_craft">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Bottle Painting</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                              </p>
-                              <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                              </p>
-                              <p class="card_description">
-                                Dedicated to making the digital world more user-friendly,
-                                I specialize in UI/UX design and interface optimization.
-                              </p>
-                              <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-                    <!-- slide-end -->
-
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/art_craft/face painting.jpg" alt="art_craft">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Face painting</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-                    <!-- slide-end -->
-
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/art_craft/rangoli.jpg" alt="art_craft">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Rangoli</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-                    <!-- slide-end -->
-
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/art_craft/mehendi.jpg" alt="art_craft">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Mehendi Competition</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/art_craft/recycle.jpg" alt="art_craft">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Recycle art</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-
-                    <!-- slide-end -->
-                </div>
-                <div class="competition-slider-control">
-                    <div class="swiper-button-prev slider-arrow">
-                        <!-- <ion-icon name="arrow-back-outline"></ion-icon> -->
-                        <img src="images/custom/pointer.png">
-                    </div>
-                    <div class="swiper-button-next slider-arrow">
-                        <!-- <ion-icon name="arrow-forward-outline"></ion-icon> -->
-                        <img src="images/custom/pointer.png">
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Eclectic -->
-    <section id="competition">
-        <div class="container">
-            <h1 class="section-heading">Eclectic</h1>
-        </div>
-        <div class="container">
-            <div class="swiper competition-slider">
-                <div class="swiper-wrapper">
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/extra/city planning.jpg" alt="extra">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">City Planning</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                              </p>
-                              <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                              </p>
-                              <p class="card_description">
-                                Dedicated to making the digital world more user-friendly,
-                                I specialize in UI/UX design and interface optimization.
-                              </p>
-                              <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-                    <!-- slide-end -->
-
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/extra/film making.jpg" alt="extra">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Film Making</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-                    <!-- slide-end -->
-
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/extra/bridge.jpg" alt="extra">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Brige Making</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-                    <!-- slide-end -->
-
-                    <!-- slide-start -->
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/extra/photography.jpg" alt="extra">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">On Spot Photography</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/extra/pexels-inga-seliverstova-3589903-scaled.jpg" alt="extra">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Typing Competition</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/extra/capture the flag.jpg" alt="extra">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Capture The Flag</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/extra/debate.jpg" alt="extra">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Debate Competition</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/extra/speech.jpg" alt="extra">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Extempore Speech</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/extra/poem.jpg" alt="extra">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Poem Recitation</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide competition-slide">
-                        <div class="competition-slide-img">
-                            <img src="images/competitions/extra/thought.jpg" alt="extra">
-                        </div>
-                        <div class="competition-slide-content">
-                            <h1 class="card-name">Thought Sharing</h1>
-                            <div class="separatorUp"></div>
-                            <p class="price">Prize pool<br>Rs X</p>
-                            <div class="separatorDown"></div>
-                            <p class="info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                XYZ, CIT Kokrajhar
-                            </p>
-                            <p class="info">
-                                <i class="far fa-calendar-alt"></i>
-                                Sat, Sep 19, 10:00 AM IST
-                            </p>
-                            <p class="card_description">
-                                Valorant is a tactical first-person shooter game developed by Riot Games, known for its
-                                precise
-                                gameplay.
-                            </p>
-                            <a href="#" class="card_button">Register</a>
-                        </div>
-                    </div>
-
-                    <!-- slide-end -->
-                </div>
-                <div class="competition-slider-control">
-                    <div class="swiper-button-prev slider-arrow">
-                        <!-- <ion-icon name="arrow-back-outline"></ion-icon> -->
-                        <img src="images/custom/pointer.png">
-                    </div>
-                    <div class="swiper-button-next slider-arrow">
-                        <!-- <ion-icon name="arrow-forward-outline"></ion-icon> -->
-                        <img src="images/custom/pointer.png">
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- footer -->
-    <footer>
-        <div class="row">
-            <div class="col">
-                <img src="logo/techcracyLogo.png" alt="footerLogo">
-                <p>
-                    Central Institute of Technology Kokrajhar presents Techcracy, the ultimate tech festival in the BTR
-                    region. Join us for competitions, workshops, and inspiring talks that celebrate innovation and
-                    creativity. Stay tuned for updates and be a part of the innovation wave at Techcracy!
-                </p>
-            </div>
-            <div class="col">
-                <h3>
-                    Contact us
-                    <div class="underline"><span></span></div>
-                </h3>
-                <p>Central Institute of Technology, Kokrajhar</p>
-                <p>PO: Rangalikhata, Dist: Kokrajhar</p>
-                <p>BTAD, Assam 783370</p>
-                <p class="website"><a href="https://www.cit.ac.in/">cit.ac.in</a></p>
-            </div>
-            <div class="col">
-                <h3>
-                    Follow us
-                    <div class="underline"><span></span></div>
-                </h3>
-                <ul class="social-links">
-                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <input type="checkbox" id="nav-check">
+                <label for="nav-check" class="icons">
+                    <i class='bx bx-menu-alt-right' id="menu-icon"></i>
+                    <i class='bx bx-x' id="close-icon"></i>
+                </label>
+                <ul id="menu-ul">
+                    <li>
+                        <a href="index.html">Home</a>
+                        <a href="#">Events</a>
+                        <a href="competitions.html" class="active">Competitions</a>
+                        <a href="Merchandise.html">Merchandise</a>
+                        <a href="team.html">Team</a>
+                    </li>
                 </ul>
-            </div>
-        </div>
-        <div class="dont-click">
-            <button>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                    <h5>Don't click</h5>
-                </a>
-            </button>
-        </div>
-        <div>
-            <p class="copy-right">Developed and Managed by: Uddipta Deka, Hirakjyoti Talukdar</p>
-        </div>
-        <hr>
-        <div>
-            <p class="copy-right">&copy; 2023 Techcracy 2023.</p>
-        </div>
-    </footer>
+            </nav>
+        </header>
 
+        <!-- Insomnia -->
+        <section id="competition">
+            <div class="container">
+                <h1 class="section-heading">Insomnia</h1>
+            </div>
+            <div class="container">
+                <div class="swiper competition-slider">
+                    <div class="swiper-wrapper">
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/insomnia/Valo.png" alt="Insomnia">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Valorant</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+                        <!-- slide-end -->
+
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/insomnia/Tekken.jpg" alt="Insomnia">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Tekken</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+                        <!-- slide-end -->
+
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/insomnia/Bgmi.jpg" alt="Insomnia">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Bgmi</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+                        <!-- slide-end -->
+
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/insomnia/Fifa.jpg" alt="Insomnia">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Fifa 23</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+
+                        <!-- slide-end -->
+                    </div>
+                    <div class="competition-slider-control">
+                        <div class="swiper-button-prev slider-arrow">
+                            <!-- <ion-icon name="arrow-back-outline"></ion-icon> -->
+                            <img src="images/custom/pointer.png">
+                        </div>
+                        <div class="swiper-button-next slider-arrow">
+                            <!-- <ion-icon name="arrow-forward-outline"></ion-icon> -->
+                            <img src="images/custom/pointer.png">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- for coding competitions -->
+        <section id="competition">
+            <div class="container">
+                <h1 class="section-heading">Code Wars</h1>
+            </div>
+            <div class="container">
+                <div class="swiper competition-slider">
+                    <div class="swiper-wrapper">
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/codeing/photo-1551033406-611cf9a28f67.jpg" alt="codeing">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Coding challenge</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Dedicated to making the digital world more user-friendly,
+                                    I specialize in UI/UX design and interface optimization.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+                        <!-- slide-end -->
+
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/codeing/Hackathon.jpg" alt="codeing">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Hackathon</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+                        <!-- slide-end -->
+
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/codeing/uiux.jpg" alt="codeing">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">UI/UX Competition</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+                        <!-- slide-end -->
+
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/codeing/Technical_Comp.jpg" alt="codeing">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Technical Quiz</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+
+                        <!-- slide-end -->
+                    </div>
+                    <div class="competition-slider-control">
+                        <div class="swiper-button-prev slider-arrow">
+                            <!-- <ion-icon name="arrow-back-outline"></ion-icon> -->
+                            <img src="images/custom/pointer.png">
+                        </div>
+                        <div class="swiper-button-next slider-arrow">
+                            <!-- <ion-icon name="arrow-forward-outline"></ion-icon> -->
+                            <img src="images/custom/pointer.png">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Robotics competitions -->
+        <section id="competition">
+            <div class="container">
+                <h1 class="section-heading">Robotics</h1>
+            </div>
+            <div class="container">
+                <div class="swiper competition-slider">
+                    <div class="swiper-wrapper">
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/robotics/robowar.jpg" alt="robotics">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Robo War</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Dedicated to making the digital world more user-friendly,
+                                    I specialize in UI/UX design and interface optimization.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+                        <!-- slide-end -->
+
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/robotics/robosoccer.jpg" alt="robotics">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Robo Soccer</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+                        <!-- slide-end -->
+
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/robotics/linefollower.jpg" alt="robotics">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Line Follower</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+                        <!-- slide-end -->
+
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/robotics/hovercraft.jpg" alt="robotics">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Hovercraft</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+
+                        <!-- slide-end -->
+                    </div>
+                    <div class="competition-slider-control">
+                        <div class="swiper-button-prev slider-arrow">
+                            <!-- <ion-icon name="arrow-back-outline"></ion-icon> -->
+                            <img src="images/custom/pointer.png">
+                        </div>
+                        <div class="swiper-button-next slider-arrow">
+                            <!-- <ion-icon name="arrow-forward-outline"></ion-icon> -->
+                            <img src="images/custom/pointer.png">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- art abd crafting -->
+        <section id="competition">
+            <div class="container">
+                <h1 class="section-heading">Art and Craft</h1>
+            </div>
+            <div class="container">
+                <div class="swiper competition-slider">
+                    <div class="swiper-wrapper">
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/art_craft/bottle painting.jpg" alt="art_craft">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Bottle Painting</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Dedicated to making the digital world more user-friendly,
+                                    I specialize in UI/UX design and interface optimization.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+                        <!-- slide-end -->
+
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/art_craft/face painting.jpg" alt="art_craft">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Face painting</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+                        <!-- slide-end -->
+
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/art_craft/rangoli.jpg" alt="art_craft">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Rangoli</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+                        <!-- slide-end -->
+
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/art_craft/mehendi.jpg" alt="art_craft">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Mehendi Competition</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/art_craft/recycle.jpg" alt="art_craft">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Recycle art</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+
+                        <!-- slide-end -->
+                    </div>
+                    <div class="competition-slider-control">
+                        <div class="swiper-button-prev slider-arrow">
+                            <!-- <ion-icon name="arrow-back-outline"></ion-icon> -->
+                            <img src="images/custom/pointer.png">
+                        </div>
+                        <div class="swiper-button-next slider-arrow">
+                            <!-- <ion-icon name="arrow-forward-outline"></ion-icon> -->
+                            <img src="images/custom/pointer.png">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Eclectic -->
+        <section id="competition">
+            <div class="container">
+                <h1 class="section-heading">Eclectic</h1>
+            </div>
+            <div class="container">
+                <div class="swiper competition-slider">
+                    <div class="swiper-wrapper">
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/extra/city planning.jpg" alt="extra">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">City Planning</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Dedicated to making the digital world more user-friendly,
+                                    I specialize in UI/UX design and interface optimization.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+                        <!-- slide-end -->
+
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/extra/film making.jpg" alt="extra">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Film Making</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+                        <!-- slide-end -->
+
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/extra/bridge.jpg" alt="extra">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Brige Making</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+                        <!-- slide-end -->
+
+                        <!-- slide-start -->
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/extra/photography.jpg" alt="extra">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">On Spot Photography</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/extra/pexels-inga-seliverstova-3589903-scaled.jpg"
+                                    alt="extra">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Typing Competition</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/extra/capture the flag.jpg" alt="extra">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Capture The Flag</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/extra/debate.jpg" alt="extra">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Debate Competition</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/extra/speech.jpg" alt="extra">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Extempore Speech</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/extra/poem.jpg" alt="extra">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Poem Recitation</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide competition-slide">
+                            <div class="competition-slide-img">
+                                <img src="images/competitions/extra/thought.jpg" alt="extra">
+                            </div>
+                            <div class="competition-slide-content">
+                                <h1 class="card-name">Thought Sharing</h1>
+                                <div class="separatorUp"></div>
+                                <p class="price">Prize pool<br>Rs X</p>
+                                <div class="separatorDown"></div>
+                                <p class="info">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    XYZ, CIT Kokrajhar
+                                </p>
+                                <p class="info">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Sat, Sep 19, 10:00 AM IST
+                                </p>
+                                <p class="card_description">
+                                    Valorant is a tactical first-person shooter game developed by Riot Games, known for
+                                    its
+                                    precise
+                                    gameplay.
+                                </p>
+                                <a href="#" class="card_button">Register</a>
+                            </div>
+                        </div>
+
+                        <!-- slide-end -->
+                    </div>
+                    <div class="competition-slider-control">
+                        <div class="swiper-button-prev slider-arrow">
+                            <!-- <ion-icon name="arrow-back-outline"></ion-icon> -->
+                            <img src="images/custom/pointer.png">
+                        </div>
+                        <div class="swiper-button-next slider-arrow">
+                            <!-- <ion-icon name="arrow-forward-outline"></ion-icon> -->
+                            <img src="images/custom/pointer.png">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- footer -->
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <img src="logo/techcracyLogo.png" alt="footerLogo">
+                    <p>
+                        Central Institute of Technology Kokrajhar presents Techcracy, the ultimate tech festival in the
+                        BTR
+                        region. Join us for competitions, workshops, and inspiring talks that celebrate innovation and
+                        creativity. Stay tuned for updates and be a part of the innovation wave at Techcracy!
+                    </p>
+                </div>
+                <div class="col">
+                    <h3>
+                        Contact us
+                        <div class="underline"><span></span></div>
+                    </h3>
+                    <p>Central Institute of Technology, Kokrajhar</p>
+                    <p>PO: Rangalikhata, Dist: Kokrajhar</p>
+                    <p>BTAD, Assam 783370</p>
+                    <p class="website"><a href="https://www.cit.ac.in/">cit.ac.in</a></p>
+                </div>
+                <div class="col">
+                    <h3>
+                        Follow us
+                        <div class="underline"><span></span></div>
+                    </h3>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dont-click">
+                <button>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <h5>Don't click</h5>
+                    </a>
+                </button>
+            </div>
+            <div>
+                <p class="copy-right">Developed and Managed by: Uddipta Deka, Hirakjyoti Talukdar</p>
+            </div>
+            <hr>
+            <div>
+                <p class="copy-right">&copy; 2023 Techcracy 2023.</p>
+            </div>
+        </footer>
+    </section>
+    <div id="preloader">
+        <img src="images/preloader/ezgif-1-55678dde3e.gif">
+    </div>
+
+    <!-- js -->
+    <script src="js/preloader.js"></script>
 
 
 

@@ -11,15 +11,17 @@
 }
 #preloader img{
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 #displayer{
     display: block;
 }
-@media (max-width: 450px){
+/* @media (max-width: 450px){
     #displayer{
         display: none;
     }
     #preloader{
         display: block;
     }
-}
+} */
