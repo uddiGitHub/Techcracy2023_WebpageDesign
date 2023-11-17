@@ -71,10 +71,24 @@ footer {
     transition: 0.3s;
 }
 .copy-right{
+    font-size: large;
+    font-family: 'Tilt Neon', sans-serif;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.dev{
+    border: none;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    color: whitesmoke;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.359);
+}
+.dev:hover{
+    background-color: transparent;
+    color: rgb(233, 104, 233);
+    transition: 0.3s;
 }
 .dont-click{
     position: relative;
@@ -141,6 +155,9 @@ hr{
 }
 
 @media (max-width: 1150px) {
+    hr {
+        width: 40%;
+    }
     footer{
         bottom: unset;
     }   
@@ -165,9 +182,20 @@ hr{
     }
 
 }
-@media (max-width: 380px){
+@media (max-width: 600px) {
+    hr{
+        width: 50%;
+    }
     .copy-right{
-        font-size: 12px;
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 380px){
+    hr{
+        width: 60%;
+    }
+    .copy-right{
+        font-size: .6rem;
         word-wrap: break-word;
     }
 }

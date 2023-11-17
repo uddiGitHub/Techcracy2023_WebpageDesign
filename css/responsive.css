@@ -72,6 +72,7 @@
         transform: translateX(0%);
         animation: color_anim 1s infinite 0.4s;
     }
+    
 
     .competitions-items-container {
         margin-bottom: 6vh;

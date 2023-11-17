@@ -1,4 +1,17 @@
 @media (max-width: 1460px) {
+    html,
+    body {
+        animation: slowlyRepeat 120s linear infinite;
+    }
+    @keyframes slowlyRepeat {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: 100% 100%;
+        }
+    }
+
     .title {
         display: none;
     }
@@ -11,6 +24,7 @@
         margin-top: 60px;
         margin-bottom: 60px;
     }
+
     #sun,
     #mercury,
     #venus,
@@ -42,6 +56,18 @@
 }
 
 @media (max-width: 730px) {
+    html,
+    body {
+        animation: slowlyRepeat 120s linear infinite;
+    }
+    @keyframes slowlyRepeat {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: 100% 100%;
+        }
+    }
     .container {
         width: 400px;
         height: 400px;
@@ -61,6 +87,7 @@
     .content-box .card {
         padding: 5px;
     }
+
     .members-content::before,
     .members-content.three::before,
     .members-content.v-three::before,
@@ -72,9 +99,36 @@
         inset: 20px;
         z-index: 1;
     }
+    .showWord {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .showWord h1 {
+        font-size: 50px;
+    }
+
+    .showWord .reveal-type {
+        font-size: 10px;
+    }
+
+    .showWord .themeHighlight {
+        font-size: 5px;
+    }
 }
 
 @media (max-width: 530px) {
+    html,
+    body {
+        animation: slowlyRepeat 180s linear infinite;
+    }
+    @keyframes slowlyRepeat {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: 100% 100%;
+        }
+    }
     .container {
         width: 280px;
         height: 280px;
@@ -114,5 +168,23 @@
 
     .hideTitle h4 {
         font-size: 1.5em;
+    }
+
+    .showWord {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .showWord h1 {
+        font-size: 50px;
+        -webkit-text-stroke: .8px whitesmoke;
+    }
+
+    .reveal-type {
+        font-size: 1rem;
+    }
+
+    .showWord .themeHighlight {
+        font-size: .6rem;
     }
 }

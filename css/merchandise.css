@@ -89,6 +89,11 @@ label[for="color-toggle"]:active::after {
     justify-content: center;
     align-items: center;
 }
+.hoodie-section > img{
+    width: 50%;
+    height: 50%;
+    margin-top: 10vh;
+}
 .hoodie {
     display: none;
 }
