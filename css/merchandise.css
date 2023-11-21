@@ -7,6 +7,17 @@ html, body{
     height: 100%;
     width: 100%;
     font-family: 'Bebas Neue', sans-serif;
+    background-image: url(../images/background/space.png);
+    animation: slowlyRepeat 30s linear infinite;
+    z-index: -1;
+}
+@keyframes slowlyRepeat {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
 }
 label[for="color-toggle"] {
     width: 300px;
