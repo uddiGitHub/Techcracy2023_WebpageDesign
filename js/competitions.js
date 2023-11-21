@@ -5,7 +5,7 @@ var CompetitionSlider = new Swiper('.competition-slider', {
     loop: false,
     slidesPerView: 'auto',
     coverflowEffect: {
-        rotate: 0,
+        rotate: 7,
         stretch: 0,
         depth: 100,
         modifier: 4.5,
