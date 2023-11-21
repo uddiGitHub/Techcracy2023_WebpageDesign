@@ -1,6 +1,3 @@
-document.body.style.backgroundImage = "url('images/background/space.png')";
-document.body.style.backgroundSize = "cover";
-
 const checkbox = document.getElementById("color-toggle");
 const blackHoodie = document.getElementById("black-hoodie");
 const grayHoodie = document.getElementById("gray-hoodie");

@@ -103,6 +103,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+#naptune {
+    background-image: url(../images/gif/naptune.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 
 
 

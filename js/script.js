@@ -1,5 +1,4 @@
 gsap.registerPlugin(ScrollTrigger);
-
 function initLocomotiveScroll() {
     const locomotiveScroll = new LocomotiveScroll({
         el: document.querySelector("#main"),
@@ -38,14 +37,14 @@ function initCanvasAnimation() {
 
     const frameCount = 110;
     const images = [];
-    const imageSeq = { frame: 1 };
+    const imageSeq = { frame: 0 };
 
     function files(index) {
         const path = "images/comic/";
         return `${path}${index.toString().padStart(4, '0')}.png`;
     }
 
-    for (let i = 1; i <= frameCount; i++) {
+    for (let i = 0; i <= frameCount; i++) {
         const img = new Image();
         img.src = files(i);
         images.push(img);
@@ -57,6 +56,7 @@ function initCanvasAnimation() {
         ease: `none`,
         scrollTrigger: {
             scrub: true,
+            markers: true,
             trigger: `#home>canvas`,
             start: `top top`,
             end: `600% top`,
@@ -65,7 +65,7 @@ function initCanvasAnimation() {
         onUpdate: render,
     });
 
-    images[1].onload = render;
+    images[0].onload = render;
 
     function render() {
         scaleImage(images[imageSeq.frame], context);
@@ -97,6 +97,7 @@ function initCanvasPin() {
     ScrollTrigger.create({
         trigger: "#home>canvas",
         pin: true,
+        markers: false,
         start: `top top`,
         end: `600% top`,
         scroller: `#main`,
@@ -104,6 +105,10 @@ function initCanvasPin() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    window.scrollTo({
+        top:200,
+        behavior: 'smooth'
+    });
     initLocomotiveScroll();
     initCanvasAnimation();
     initCanvasPin();
