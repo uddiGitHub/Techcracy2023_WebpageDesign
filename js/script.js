@@ -56,7 +56,7 @@ function initCanvasAnimation() {
         ease: `none`,
         scrollTrigger: {
             scrub: true,
-            markers: true,
+            markers: false,
             trigger: `#home>canvas`,
             start: `top top`,
             end: `600% top`,
