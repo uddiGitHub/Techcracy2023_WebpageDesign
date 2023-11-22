@@ -58,7 +58,7 @@ function initCanvasAnimation() {
             scrub: true,
             markers: false,
             trigger: `#home>canvas`,
-            start: `top top`,
+            start: `top top=+30vh`,
             end: `600% top`,
             scroller: `#main`,
         },

@@ -21,11 +21,17 @@ html, body{
     color: transparent;
     text-align: center;
     font-size: 100px;
+    padding-top: 10px;
 }
 
 @media (max-width:1440px) {
     #competition {
         padding: 7rem 0;
+    }
+}
+@media (max-width:900px) {
+    #competition {
+        padding: 0;
     }
 }
 
@@ -285,10 +291,21 @@ html, body{
         margin-top: 0rem;
     }
 }
+@media (max-width:520px) {
+    .competition-slider-control{
+        bottom: 12rem;
+    }
+}
 @media (max-width:450px) {
     .competition-slider-control .swiper-button-next {
         left: 80% !important;
         transform: translateX(-80%) !important;
+    }
+    
+}
+@media (max-width:400px){
+    .competition-slider-control{
+        display: none;
     }
 }
 

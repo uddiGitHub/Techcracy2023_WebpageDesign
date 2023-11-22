@@ -167,7 +167,6 @@
 
     .competitions-items {
         justify-content: space-between;
-        margin: 0 10px;
         width: 90vw;
     }
     .description-right,
@@ -212,7 +211,6 @@
         font-size: 7.5rem;
         -webkit-text-stroke: 4.5px whitesmoke;
     }
-
     #Competitions>h1 {
         font-size: 100px;
         -webkit-text-stroke: 4.5px whitesmoke;
@@ -225,7 +223,6 @@
 
     .competitions-items {
         justify-content: space-between;
-        margin: 0 10px;
         width: 90vw;
     }
 
@@ -304,7 +301,6 @@
         font-size: 4rem;
         -webkit-text-stroke: 3px whitesmoke;
     }
-
     #Competitions>h1 {
         font-size: 50px;
         -webkit-text-stroke: 3px whitesmoke;
