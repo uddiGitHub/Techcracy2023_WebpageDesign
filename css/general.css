@@ -1,5 +1,5 @@
 ::-webkit-scrollbar{
-    display: block;
+    display: none;
 }
 * {
     margin: 0%;
