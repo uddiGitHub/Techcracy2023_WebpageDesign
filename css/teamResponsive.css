@@ -53,6 +53,9 @@
         text-shadow: 3px 12px 0px rgb(10, 10, 10);
         -webkit-text-stroke: 0.5px black;
     }
+    .facGap{
+        padding: 0px;
+    }
 }
 
 @media (max-width: 730px) {
@@ -169,7 +172,9 @@
     .hideTitle h4 {
         font-size: 1.5em;
     }
-
+    .showTitle{
+        font-size: 1.5em;
+    }
     .showWord {
         padding-left: 2rem;
         padding-right: 2rem;
