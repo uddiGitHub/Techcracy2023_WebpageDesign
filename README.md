@@ -15,3 +15,7 @@ Immerse yourself in the dynamic world of our annual technical fest, where we shi
 **CSS:** Styling elements to enhance visual appeal and user experience.
 
 **JavaScript:** Adding dynamic and interactive features to elevate the overall functionality.
+
+## License
+
+This project is licensed under the `MIT License`.
