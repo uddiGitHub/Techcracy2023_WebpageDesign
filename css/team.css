@@ -34,7 +34,22 @@ body {
     text-align: center;
     font-size: 100px;
 }
-
+.showTitle{
+    font-family: 'Lapsus Pro Bold', sans-serif;
+        text-transform: uppercase;
+        position: absolute;
+        display: block;
+        font-size: 3.5em;
+        color: whitesmoke;
+        text-align: center;
+        letter-spacing: 1px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(251, 251, 251);
+        text-shadow: 3px 12px 0px rgb(10, 10, 10);
+        -webkit-text-stroke: 0.5px black;
+}
 .struct-body {
     display: flex;
     justify-content: center;
@@ -43,6 +58,9 @@ body {
     flex-direction: row;
     background: transparent;
 
+}
+.facGap{
+    padding: 40px;
 }
 
 .container {
@@ -53,7 +71,13 @@ body {
     border-top: 12px double whitesmoke;
     border-radius: 50%;
 }
+#blackHole{
+    background-image: url(../images/gif/blackHole.png);
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-position: center;
 
+}
 #sun {
     background-image: url(../images/gif/sun.gif);
     background-repeat: no-repeat;
@@ -205,11 +229,11 @@ body {
     border-top: 8px dotted whitesmoke;
     animation-name: scale_pulse;
 }
-/* .members-content.four::before {
+.members-content.four::before {
     inset: 40px;
     border: 8px dotted whitesmoke;
     animation-name: scale_pulse;
-} */
+}
 
 @keyframes scale_pulse {
     0% {

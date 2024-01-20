@@ -93,6 +93,9 @@ html, body{
         height: 27rem !important;
 
     }
+    .competition-slide-content .card-name{
+        font-size: 1rem;
+    }
     .competition-slide .competition-slide-img img {
         width: 21rem !important;
         height: 27rem !important;
